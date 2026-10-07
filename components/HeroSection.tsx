@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import carImage from '../public/car.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -165,9 +166,9 @@ export default function HeroSection() {
         className="absolute top-1/2 left-0 z-50 w-[40vw] md:w-[35vw] max-w-[550px] pointer-events-none opacity-0"
         style={{ transform: 'translateY(-50%)' }}
       >
-        <img
-          src="/car.png"
-          alt="Car"
+        <img 
+          src={carImage.src} 
+          alt="Car" 
           className="w-full h-auto drop-shadow-2xl"
         />
       </div>
